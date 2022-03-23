@@ -19,6 +19,16 @@ body {
   min-height: 100%;
   background-color: #c8f4f9;
 }
+h2 {
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+h3 {
+  padding: 20px 0;
+}
+
 
 /* BANNER */
 
@@ -57,9 +67,6 @@ body {
 }
 #presentacion h2 {
   text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  padding: 20px 0;
 }
 #presentacion p {
   text-align: justify;
