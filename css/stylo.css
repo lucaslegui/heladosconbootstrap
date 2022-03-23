@@ -1,0 +1,66 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Poppins&display=swap");
+
+/* paleta de colores https://www.canva.com/colors/color-palettes/icy-gradient/ */
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  
+}
+
+body {
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: #c8f4f9;
+}
+
+/* BANNER */
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background-image: url(../img/header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+}
+.titulo_cabecera {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  color: antiquewhite;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.desde {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: 3px;
+}
+
+/* PRESENTACION */
+
+#presentacion {
+  padding: 15px;
+  border: solid 1px;
+  background-color: rgba(218, 112, 214, 0.7);
+}
+#presentacion h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 20px 0;
+}
+#presentacion p {
+  text-align: justify;
+}
