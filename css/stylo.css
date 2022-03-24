@@ -14,13 +14,16 @@
 }
 
 body {
-  margin: 0 auto 2rem;
   font-size: 1.2rem;
   min-height: 100%;
-  background-color: #c8f4f9;
+  background-image: url(../img/Sin-título-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
 }
 h2 {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-size: 3rem;
   font-weight: bold;
   padding: 20px 0;
 }
@@ -70,4 +73,33 @@ h3 {
 }
 #presentacion p {
   text-align: justify;
+}
+
+/* lO MAS VENDIDO */
+
+#loMasVendido {
+  background-color: rgba(200, 162, 200, 0.7);
+}
+
+/* FOOTER */
+
+#pie .redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+#pie .redes a:hover{
+  color: aqua;
+}
+
+#pie #copy{
+background-color: #0a1a2a;
 }

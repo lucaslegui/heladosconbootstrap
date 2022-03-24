@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/167f6d5e62.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/stylo.css">
     <title>Helados Artesanales</title>
 </head>
@@ -59,12 +60,13 @@
     </section>
     <section class="py-3" id="loMasVendido">
         <div class="container-fluid">
-            <h2>LO MAS VENDIDO</h2>
+            <h2 class="text-center">LO MAS VENDIDO</h2>
             <div class="row">
-                <article class="col-lg-4">
-                    <h3>HELADOS POR LITRO</h3>
-                    <img src="img/pote.png" alt="pote de helado" />
-                    <p>
+
+                <article class="col-md-6 col-lg-4 pb-3">
+                    <img src="img/pote.png" alt="pote de helado" class="d-block mx-auto w-95" />
+                    <h3 class="text-center fw-bold">HELADOS POR LITRO</h3>
+                    <p class="fs-4 fw-bold">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
                         eveniet qui neque natus saepe, vero voluptate iusto vel
                         necessitatibus ullam sapiente modi odio doloremque mollitia soluta
@@ -74,11 +76,13 @@
                         eius, temporibus exercitationem? Officia nostrum cupiditate
                         pariatur quos. Dolores, itaque?
                     </p>
+                    <button type="button" class="btn btn-primary w-50">Pedir!</button>
                 </article>
-                <article class="col-lg-4">
-                    <h3>VEGANOS</h3>
-                    <img src="img/vegan.png" alt="helado vegano" />
-                    <p>
+
+                <article class="col-md-6 col-lg-4 pb-3">
+                    <img src="img/vegan.png" alt="helado vegano" class="d-block mx-auto w-95" />
+                    <h3 class="text-center fw-bold">VEGANOS</h3>
+                    <p class="fs-4 fw-bold">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
                         aliquid cupiditate quasi laborum sint qui nulla in quia placeat
                         porro repellendus dolores quibusdam suscipit repudiandae quam, est
@@ -88,11 +92,13 @@
                         magni? Animi inventore, neque numquam reprehenderit deleniti
                         maiores quis?
                     </p>
+                    <button type="button" class="btn btn-success w-50">Pedir!</button>
                 </article>
-                <article class="col-lg-4">
-                    <h3>POSTRES</h3>
-                    <img src="img/postre.png" alt="postre helado" />
-                    <p>
+
+                <article class="col-md-12 col-lg-4 pb-3">
+                    <img src="img/postre.png" alt="postre helado" class="d-block mx-auto w-98" />
+                    <h3 class="text-center fw-bold">POSTRES</h3>
+                    <p class="fw-bold fs-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
                         accusantium dolor enim, ex labore, nobis natus consequuntur et
                         officia dignissimos quia alias explicabo repudiandae quos harum?
@@ -102,12 +108,99 @@
                         repudiandae eos? Totam necessitatibus exercitationem repudiandae
                         nihil ipsa perspiciatis?
                     </p>
+                    <button type="button" class="btn btn-danger w-50">Pedir!</button>
                 </article>
             </div>
 
         </div>
-
     </section>
+
+    <section id="Pedidos" class="py-5 px-3 border border-4">
+        <div class="row">
+            <article class="col-lg-6 lg-pe-5 container-fluid">
+                <!-- FORMULARIO -->
+                <h2 class="text-secondary">Realizar pedido</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                    rem voluptatem totam voluptate eaque eligendi ad asperiores
+                    exercitationem hic facere.
+                </p>
+                <form>
+                    <div class="mb-3 col-md-6">
+                        <label for="Nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion">
+                    </div>
+
+                    <div class="mb-3 col-md-8"">
+                      <label for=" exampleInputEmail1" class="form-label">Dirección de Mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="exampleFormControlTextarea1" class="form-label">Qué producto te interesa?:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            RETIRO EN EL LOCAL
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            DELIVERY
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar!</button>
+                </form>
+            </article>
+
+            <article class="col-lg-6">
+                <!-- MAPA -->
+                <h2 class="text-secondary">Zona de delivery</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                    totam nihil, provident ad, dignissimos praesentium tenetur nisi
+                    magnam nostrum rem ut dolor distinctio asperiores. Quod fugiat
+                    sunt eaque quam mollitia?
+                </p>
+                <img src="img/zona.png" alt="imagen mapa" class="d-box mx-auto w-100 img-thumbnail rounded-3" />
+            </article>
+        </div>
+    </section>
+
+    <footer id="pie" class= "container-fluid bg-dark text-white py-3 px-5">
+        <div class="row">
+            <div class="col-md-4">
+               <figure> <a href="#"><img src="img/LOGO.png" alt="logo heladeria" class="d-box mx-auto w-55 img-thumbnail rounded-3"></a>
+               </figure>
+            </div>
+            <div class="col-md-4">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, a.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, a.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>NUESTRAS REDES</h2>
+                <div class="redes">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div id="copy" class="text-center py-3">
+            <small>&copy; 2022 <b>Heladeria Los Pelados</b></small>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
