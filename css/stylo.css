@@ -32,6 +32,8 @@ h3 {
   padding: 20px 0;
 }
 
+/* NAVBAR */
+
 #navBar{
   background-color: rgba(13, 152, 186, 0.7);
   border: solid 1px black;
@@ -53,7 +55,7 @@ h3 {
 #banner{
   display: flex;
   flex-direction: column;
-  height: 20rem;
+  height: 30rem;
   background-image: url(../img/header.webp);
   background-repeat: no-repeat;
   background-size: cover;
