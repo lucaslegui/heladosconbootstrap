@@ -1,6 +1,9 @@
 @import "_commons.scss";
 @import "_fonts.scss";
 @import "_banner.scss";
+@import "_nav.scss";
+@import "_index.scss";
+@import "_footer.scss";
 
 body {
   font-size: $textSm;
@@ -9,7 +12,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
-
 }
 
 h2 {

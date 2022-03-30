@@ -1,0 +1,17 @@
+#navBar {
+  background-color: rgba(13, 152, 186, 0.7);
+  border: solid 1px black;
+
+  a {
+    color: #843cae;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    list-style: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  a:hover {
+    cursor: pointer;
+    background-color: blue;
+  }
+}
