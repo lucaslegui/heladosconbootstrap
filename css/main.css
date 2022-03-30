@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* colores  */
+/* sizing */
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Poppins&display=swap");
+/* VARIABLES DE TEXTO */
+#banner {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background-image: url(../img/header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center; }
+
+.titulo_cabecera {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  color: antiquewhite;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.desde {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: 3px; }
+
+body {
+  font-size: 1.2em;
+  min-height: 100%;
+  background-image: url(../img/Sin-título-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto; }
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 20px 0; }
+
+h3 {
+  padding: 20px 0; }
